@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><img src="smoothie-icon.png" alt="Smoothie Icon" class="icon"> Smoothie Machine</h1>
+            <p>Customize and order your perfect smoothie!</p>
+        </header>
+        
+        <form id="smoothie-form">
+            <div class="section">
+                <label for="size"><img src="size-icon.png" alt="Size Icon" class="icon"> Choose Size:</label>
+                <select id="size" name="size">
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                </select>
+            </div>
+
+            <div class="section">
+                <label><img src="fruit-icon.png" alt="Fruit Icon" class="icon"> Select Fruits:</label>
+                <label><input type="checkbox" name="fruit" value="Banana"> Banana</label>
+                <label><input type="checkbox" name="fruit" value="Strawberry"> Strawberry</label>
+                <label><input type="checkbox" name="fruit" value="Mango"> Mango</label>
+            </div>
+
+            <div class="section">
+                <label><img src="topping-icon.png" alt="Topping Icon" class="icon"> Choose Toppings:</label>
+                <label><input type="checkbox" name="topping" value="Chia Seeds"> Chia Seeds</label>
+                <label><input type="checkbox" name="topping" value="Protein Powder"> Protein Powder</label>
+                <label><input type="checkbox" name="topping" value="Honey"> Honey</label>
+            </div>
+
+            <button type="button" onclick="orderSmoothie()">Order Smoothie</button>
+        </form>
+
+        <div id="order-summary" class="summary hidden">
+            <h2>Your Smoothie</h2>
+            <p id="smoothie-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
