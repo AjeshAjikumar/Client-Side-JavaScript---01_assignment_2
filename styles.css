@@ -1,5 +1,7 @@
+/* Apply font family to the entire page */
 body {
     font-family: Arial, sans-serif;
+    /* Background image for the entire page */
     background-image: url('Images/smoothies-4998381.jpg'); /* Replace with your own image */
     background-size: cover;
     background-position: center;
@@ -7,50 +9,58 @@ body {
     padding: 0;
 }
 
+/* Styling the form container */
 .form-container {
-    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
     padding: 40px;
     max-width: 500px;
     margin: 50px auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to form */
 }
 
+/* Style for the header */
 h1 {
     text-align: center;
-    color: #333;
+    color: #333; /* Dark text color */
 }
 
+/* Styling each form group */
 .form-group {
     margin-bottom: 20px;
 }
 
+/* Styling for labels in form */
 .form-group label {
     font-weight: bold;
-    color: #555;
+    color: #555; /* Grayish color for label */
     display: block;
     margin-bottom: 5px;
 }
 
+/* Adjust spacing for checkboxes and radio buttons */
 input[type="checkbox"], input[type="radio"] {
     margin-right: 10px;
 }
 
+/* Styling the order button */
 button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Green background */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    width: 100%;
+    width: 100%; /* Make button take full width */
 }
 
+/* Hover effect for the button */
 button:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Darker green on hover */
 }
 
+/* Display the smoothie order summary */
 #smoothie-output {
     margin-top: 20px;
     font-size: 1.2em;
@@ -58,21 +68,23 @@ button:hover {
     font-weight: bold;
 }
 
+/* Styling the progress bar container */
 .progress-container {
     width: 80%;
-    background-color: #ddd;
+    background-color: #ddd; /* Light gray background */
     margin: 20px auto;
 }
 
+/* Styling for the progress bar */
 #progress-bar {
     height: 25px;
     width: 0;
-    background-color: #4caf50;
-    transition: width 0.3s;
+    background-color: #4caf50; /* Green progress bar */
+    transition: width 0.3s; /* Smooth animation */
 }
 
-/* Styling icons */
+/* Styling icons next to ingredients and add-ins */
 .fas {
     margin-right: 8px;
-    color: #4caf50;
+    color: #4caf50; /* Green color for icons */
 }
